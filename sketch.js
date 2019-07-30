@@ -27,10 +27,10 @@ class Entidade {
             this.p_y = this.p_y + forca;
           break;
         case 'DIREITA':
-            player.p_x = player.p_x + forca;
+            this.p_x = this.p_x + forca;
           break;
         case 'ESQUERDA':
-            player.p_x = player.p_x - forca;
+            this.p_x = this.p_x - forca;
           break;
   
         default:
@@ -263,7 +263,12 @@ class Jogo {
 
 }
 
-
+// que posição o player vai começar?
+  // player.
+// 0 é igual ao vazio
+// 1 é igual a parede
+// 2 e igual ao objetivo
+// 3 é igual ao bloco que é perigoso
 
 const resposta_servidor ={
   player: {p_x:200,p_y:200},
